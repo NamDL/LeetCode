@@ -16,6 +16,6 @@ public class Counting_Bits_338 {
         	}
         	for(int i=0;i<sol.length;i++)
         		System.out.print(sol[i]);
-		}
+	}
 
 }
