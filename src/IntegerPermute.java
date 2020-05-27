@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//https://leetcode.com/problems/permutations/
+
 public class IntegerPermute {
 
     public static List<List<Integer>> permute(int[] nums) {
@@ -13,8 +15,8 @@ public class IntegerPermute {
     private static void recur(int pos, int[] nums, List<List<Integer>> sol) {
         if(pos == nums.length-1) {
             List<Integer> list = new ArrayList<Integer>();
-            for(int i=0;i<nums.length;i++) {
-                list.add(nums[i]);
+            for (int num : nums) {
+                list.add(num);
             }
             sol.add(list);
             return;
